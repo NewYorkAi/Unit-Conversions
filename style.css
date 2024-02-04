@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#all-conversion-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+fieldset {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+aside {
+    margin-top: 10px;
+    font-style: italic;
+}

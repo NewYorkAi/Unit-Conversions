@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="home">
+        <header>
+            <h1>Unit Conversions</h1>
+        </header>
+        <nav>
+            <button onclick="document.getElementById('temperature').scrollIntoView();">Temperature</button>
+            <button onclick="document.getElementById('weight').scrollIntoView();">Weight</button>
+            <button onclick="document.getElementById('distance').scrollIntoView();">Distance</button>
+        </nav>
+
+        <div id="all-conversion-sections">
+            <section id="temperature">
+                <div id="tmp">
+                    <figure>
+                        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width="200px" alt="Thermometer"/>
+                        <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+                    </figure>
+                    
+                    <article>
+                        <fieldset>
+                            <legend>Temperature Conversion</legend>
+                            <label for="c">Celsius:</label>
+                            <input type="number" id="c">
+                            <button id="convert-temperature">Convert</button>
+                            <label for="f">Fahrenheit:</label>
+                            <input type="number" id="f">
+                        </fieldset>
+                    </article>
+                    
+                    <aside>
+                        To convert Celsius to Fahrenheit yourself, use this formula: (C × 9/5) + 32
+                    </aside>
+                </div>
+            </section>
+
+            <section id="weight">
+                <div id="wgt">
+                    <figure>
+                        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/weight.png" width="200px" alt="Weight Scale"/>
+                        <figcaption>Kilograms to Pounds Conversion</figcaption>
+                    </figure>
+                    <article>
+                        <fieldset>
+                            <legend>Weight</legend>
+                            <label for="kg">Kilograms:</label>
+                            <input type="number" id="kg">
+                            <button id="convert-weight">Convert</button>
+                            <label for="lbs">Pounds:</label>
+                            <input type="number" id="lbs">
+                        </fieldset>
+                    </article>
+                    <aside>
+                        To convert kilograms to pounds yourself, use this formula: kg x 2.205
+                    </aside>
+                </div>
+            </section>
+
+            <section id="distance">
+                <div id="dst">
+                    <figure>
+                        <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/speedo.png" width="200px" alt="Speedometer"/>
+                        <figcaption>Kilometer to Mile Conversion</figcaption>
+                    </figure>
+                    <article>
+                        <fieldset>
+                            <legend>Distance</legend>
+                            <label for="km">Kilometers:</label>
+                            <input type="number" id="km">
+                            <button id="convert-distance">Convert</button>
+                            <label for="mi">Miles:</label>
+                            <input type="number" id="mi">
+                        </fieldset>
+                    </article>
+                    <aside>
+                        To convert kilometers to miles yourself, use this formula: km ÷ 1.609
+                    </aside>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
